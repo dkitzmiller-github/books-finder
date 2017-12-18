@@ -1,0 +1,11 @@
+<app-page-sidenav>
+  <div data-toolbar-content>
+    myApp
+  </div>
+  <div data-sidenav-content>
+    <app-book-search (search)="search($event)" [searching]="false"></app-book-search>
+  </div>
+  <div data-main-content>
+    <app-books-list [books]="books | async"></app-books-list>
+  </div>
+</app-page-sidenav>

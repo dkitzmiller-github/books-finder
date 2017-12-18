@@ -1,0 +1,8 @@
+<md-sidenav [opened]="open">
+  <button md-icon-button (click)="openChange.emit()">
+    <md-icon>clear</md-icon>
+  </button>
+  <div>
+    <ng-content></ng-content>
+  </div>
+</md-sidenav>
